@@ -4006,11 +4006,11 @@ At least \constref{CRASH_FREE_RATE_MIN}\% of sessions shall end without a crash 
 \textit{Stakeholder Requirements:} \strref{STR_2}.
 
 \item[\nfrdef{NFR_DeviceHeat}]
-The application shall not cause the temperature of the back or any edge of the device, where a child holds it, to exceed \constref{DEVICE_TEMP_MAX_C} degrees Celsius during use.
+The application shall keep its CPU utilization at or below \constref{CPU_UTILIZATION_MAX_PERCENT}\% during gameplay on supported low-spec devices.
 
-\textit{Rationale:} Young children may hold a device for long periods, and a device that becomes too hot can cause discomfort or minor injury. The limit is revisited after proof-of-concept measurements on low-spec devices.
+\textit{Rationale:} Young children may hold a device for long periods, and excessive hardware utilization can contribute to device heating, causing discomfort or minor injury. Limiting CPU utilization provides a software-verifiable way to control sustained hardware load. The utilization limit will be revisited after proof-of-concept measurements on low-spec devices to ensure it is practical and helps prevent excessive heating.
 
-\textit{Fit Criterion:} On each low-spec device, a surface thermometer reads the back and every edge of the device, and the hottest of these readings is at or below this value throughout a continuous session of at least \constref{HEAT_TEST_SESSION_MIN} minutes of gameplay.
+\textit{Fit Criterion:} On each low-spec device, CPU utilization is measured throughout a continuous session of at least \constref{HEAT_TEST_SESSION_MIN} minutes of gameplay. The measured CPU utilization shall remain at or below \constref{CPU_UTILIZATION_MAX_PERCENT}\% throughout the session.
 
 \textit{Hazard Analysis:} \hazsr{DeviceResourceUse}{1}{DeviceOverheating}{1-1}.
 
@@ -5629,6 +5629,10 @@ verifying the specified requirements.
 \label{const:CONTROL_POSITION_TOLERANCE_MM}
 & 5 & mm & One third of \constref{TOUCH_TARGET_MIN}, so a control stays mostly over its usual position. Initial estimate. \\
 
+\texttt{CPU\_UTILIZATION\_MAX\_PERCENT}
+\label{const:CPU_UTILIZATION_MAX_PERCENT}
+& 80 & \% & Initial estimate to limit sustained CPU load on low-spec devices. To be validated through proof-of-concept testing alongside device temperature measurements. \\
+
 \texttt{CORE\_TASK\_MAX\_MIN}
 \label{const:CORE_TASK_MAX_MIN}
 & 5 & min & Short enough for the attention span of a young child (Section~\ref{SecUserCharacteristics}). Initial estimate, to be confirmed in usability testing. \\
@@ -5636,10 +5640,6 @@ verifying the specified requirements.
 \texttt{CRASH\_FREE\_RATE\_MIN}
 \label{const:CRASH_FREE_RATE_MIN}
 & 99 & \% & With \constref{TEST_SESSIONS_MIN} sessions, at most one session may fail. Initial estimate. \\
-
-\texttt{DEVICE\_TEMP\_MAX\_C}
-\label{const:DEVICE_TEMP_MAX_C}
-& 43 & degrees Celsius & Initial estimate below the point where long contact with skin becomes uncomfortable. To be confirmed against a published touch-temperature limit. \\
 
 \texttt{FLASH\_MAX\_PER\_S}
 \label{const:FLASH_MAX_PER_S}
