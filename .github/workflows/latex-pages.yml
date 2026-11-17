@@ -159,18 +159,26 @@ jobs:
             cp "$pdf" "$PDF_CACHE_DIR/$rel/"
           done
 
-          # Remove cached PDFs that no longer have a source document. This is
-          # driven by the filesystem rather than by this push's diff: a run
-          # that fails before this point would otherwise lose the deletion for
-          # good, because the next push's diff no longer mentions it.
-          find "$PDF_CACHE_DIR" -name '*.pdf' -print | while read -r cached; do
-            rel="${cached#$PDF_CACHE_DIR/}"
-            stem="docs/${rel%.pdf}"
-            if [ ! -f "$stem.tex" ] && [ ! -f "$stem.md" ]; then
-              echo "Removing $rel: no source document builds it any more"
-              rm -f "$cached"
-            fi
-          done
+          # Remove cached PDFs whose sources are deleted or excluded from the
+          # build. Reuse select_docs.py's document discovery rules so the cache
+          # and GitHub Pages always contain only eligible documents.
+          python3 - <<'PYTHON'
+          import pathlib
+          import sys
+
+          sys.path.insert(0, ".github/scripts")
+          from select_docs import discover_documents
+
+          eligible = {
+              pathlib.Path(src).relative_to("docs").with_suffix(".pdf").as_posix()
+              for src in discover_documents(".")
+          }
+          cache_dir = pathlib.Path("build-pdf")
+          for pdf in cache_dir.rglob("*.pdf"):
+              if pdf.relative_to(cache_dir).as_posix() not in eligible:
+                  print(f"Removing {pdf}: no eligible source document")
+                  pdf.unlink()
+          PYTHON
 
           # Drop manifest entries for documents that no longer exist
           python3 .github/scripts/record_deps.py --prune .pdf-deps.json .
