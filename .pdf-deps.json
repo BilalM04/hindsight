@@ -1,55 +1,35 @@
 {
-  "docs/CDFall/Ahsan_CW_Nov13_Notes.md": [
-    "docs/CDFall/Ahsan_CW_Nov13_Notes.md"
-  ],
-  "docs/CDFall/CDFallReport.tex": [
-    "docs/CDFall/CDFallReport.tex",
-    "docs/CDFall/EyeCanDoCW/Dress Up Eyes.png",
-    "docs/CDFall/EyeCanDoCW/Dress Up Fits.png",
-    "docs/CDFall/EyeCanDoCW/Eighth Scene.png",
-    "docs/CDFall/EyeCanDoCW/EleventhScene.png",
-    "docs/CDFall/EyeCanDoCW/EyeCanDoWelcome.png",
-    "docs/CDFall/EyeCanDoCW/Fifth Scene.png",
-    "docs/CDFall/EyeCanDoCW/Final Scene 1.png",
-    "docs/CDFall/EyeCanDoCW/Final Scene 2.png",
-    "docs/CDFall/EyeCanDoCW/Final Scene 3.png",
-    "docs/CDFall/EyeCanDoCW/First Scene.png",
-    "docs/CDFall/EyeCanDoCW/Fourth Scene 2.png",
-    "docs/CDFall/EyeCanDoCW/Fourth Scene.png",
-    "docs/CDFall/EyeCanDoCW/Level Menu.png",
-    "docs/CDFall/EyeCanDoCW/Ninth Scene.png",
-    "docs/CDFall/EyeCanDoCW/ProfileSelection.png",
-    "docs/CDFall/EyeCanDoCW/Second Scene.png",
-    "docs/CDFall/EyeCanDoCW/Seventh Scene.png",
-    "docs/CDFall/EyeCanDoCW/Sixth Scene.png",
-    "docs/CDFall/EyeCanDoCW/Tenth Scene 1.png",
-    "docs/CDFall/EyeCanDoCW/Tenth Scene 2.png",
-    "docs/CDFall/EyeCanDoCW/Third Scene.png",
-    "docs/CDFall/EyeCanDoCW/Thirteen Scene.png",
-    "docs/CDFall/EyeCanDoCW/Twelfth Scene 2.png",
-    "docs/CDFall/EyeCanDoCW/Twelfth Scene 3.png",
-    "docs/CDFall/EyeCanDoCW/Twelfth Scene 4.png",
-    "docs/CDFall/EyeCanDoCW/Twelfth Scene.png",
+  "docs/CDs/CognitiveWalkthrough/CognitiveWalkthrough.tex": [
+    "docs/CDs/CognitiveWalkthrough/CognitiveWalkthrough.tex",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Dress Up Eyes.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Dress Up Fits.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Eighth Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/EleventhScene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/EyeCanDoWelcome.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Fifth Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Final Scene 1.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Final Scene 2.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Final Scene 3.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/First Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Fourth Scene 2.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Fourth Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Level Menu.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Ninth Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/ProfileSelection.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Second Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Seventh Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Sixth Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Tenth Scene 1.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Tenth Scene 2.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Third Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Thirteen Scene.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Twelfth Scene 2.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Twelfth Scene 3.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Twelfth Scene 4.png",
+    "docs/CDs/CognitiveWalkthrough/EyeCanDoCW/Twelfth Scene.png",
     "docs/Comments.text",
     "docs/Common.text",
     "refs/References.bib"
-  ],
-  "docs/CDFall/Ethan_CW_Nov12_Notes.md": [
-    "docs/CDFall/Ethan_CW_Nov12_Notes.md"
-  ],
-  "docs/CDFall/Figma.md": [
-    "docs/CDFall/Figma.md"
-  ],
-  "docs/CDFall/Jackson_CW_Nov15_Notes.md": [
-    "docs/CDFall/Jackson_CW_Nov15_Notes.md"
-  ],
-  "docs/CDFall/Jake_CW_Nov13_Notes.md": [
-    "docs/CDFall/Jake_CW_Nov13_Notes.md"
-  ],
-  "docs/CDs/MLReport/main.tex": [
-    "docs/CDs/MLReport/acl.sty",
-    "docs/CDs/MLReport/custom.bib",
-    "docs/CDs/MLReport/main.tex"
   ],
   "docs/Checklists/Code-Checklist.tex": [
     "docs/Checklists/Code-Checklist.tex",
