@@ -24,7 +24,13 @@ DOC_SUFFIXES = (".tex", ".md")
 # Instructor-owned prose and things this pipeline never builds from.  Changes
 # to these must not trigger the full-rebuild fallback.
 IGNORED_BASENAMES = {"README.md", "README.txt", ".gitignore"}
-IGNORED_PREFIXES = ("pdfs/", "docs/SRS-Meyer/", ".github/")
+IGNORED_PREFIXES = (
+    "pdfs/",
+    "docs/SRS-Meyer/",
+    ".github/",
+    "docs/CDs/CognitiveWalkthrough/MeetingNotes/"
+    "docs/CDs/CognitiveWalkthrough/Figma/"
+)
 
 # Changing how documents are built can change every document, even though no
 # document source changed: the package list decides which LaTeX packages are
