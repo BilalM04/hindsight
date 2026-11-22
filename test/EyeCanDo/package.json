@@ -1,0 +1,6 @@
+{
+  "name": "com.hindsight.eyecando.tests",
+  "version": "1.0.0",
+  "displayName": "EyeCanDo Tests",
+  "description": "Automated Edit Mode tests for the EyeCanDo Unity project."
+}

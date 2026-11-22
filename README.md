@@ -30,9 +30,8 @@ Project start date: September 21, 2026
 
 This repository currently contains the project's requirements, design,
 planning, verification and validation, user documentation, research material,
-presentation material, and generated PDF artifacts. The `src/` and `test/`
-directories currently contain documentation placeholders rather than a complete
-mobile application implementation and automated test suite.
+presentation material, and generated PDF artifacts. The EyeCanDo Unity project
+is in `src/EyeCanDo/`, and its automated tests are in `test/`.
 
 ## Repository Structure
 
@@ -58,10 +57,8 @@ mobile application implementation and automated test suite.
 	relevant sections of `docs/`.
 - `refs/` - Reference material and the BibTeX bibliography in
 	`References.bib`.
-- `src/` - Intended location for the application source code. It currently
-	contains project notes and traceability documentation.
-- `test/` - Intended location for automated tests. Tests have not yet been
-	added.
+- `src/` - EyeCanDo Unity project, project notes, and traceability documentation.
+- `test/` - EyeCanDo automated Edit Mode tests and [instructions for running them](test/README.md).
 - `site/` - Static GitHub Pages template and stylesheet for browsing generated
 	PDFs.
 - `.github/` - Issue and pull-request templates plus the workflow and scripts

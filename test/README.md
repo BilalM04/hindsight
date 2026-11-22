@@ -1,5 +1,7 @@
 # Automated tests
 
-The folders and files for this folder are as follows:
+The EyeCanDo Edit Mode tests live in `EyeCanDo/Tests/EditMode/`. The Unity
+project loads them as a local package from this directory.
 
-Describe ...
+Open `src/EyeCanDo` in Unity, then choose **Window → General → Test Runner**.
+Select **EditMode** and click **Run All**.

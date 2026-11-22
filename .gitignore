@@ -288,3 +288,6 @@ __pycache__/
 
 !docs/SRS-IEEE/SystemContextFigure.pdf
 
+# Visual Studio configuration
+*.vsconfig
+

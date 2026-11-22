@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.hindsight.eyecando.tests": "file:../../../test/EyeCanDo",
     "com.unity.cinemachine": "6.6.0",
     "com.unity.cloud.gltfast": "6.20.0",
     "com.unity.ide.rider": "3.0.38",
@@ -21,5 +22,6 @@
     "com.unity.modules.unitywebrequest": "1.0.0",
     "com.unity.modules.vectorgraphics": "1.0.0",
     "com.unity.modules.ui": "1.0.0"
-  }
+  },
+  "testables": ["com.hindsight.eyecando.tests"]
 }
